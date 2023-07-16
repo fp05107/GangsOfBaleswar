@@ -10,6 +10,7 @@ import React from "react";
 import styles from "../../styles/Signup.styles";
 import Globals from "../../config/constants.config";
 import { LinearGradient } from "expo-linear-gradient";
+import RadioButtonGroup, { RadioButtonItem } from "expo-radio-button";
 
 const Signup = ({ navigation }) => {
   return (
@@ -34,9 +35,29 @@ const Signup = ({ navigation }) => {
           <TextInput style={styles.input} placeholder="Name" />
           <TextInput style={styles.input} placeholder="Email" />
           <TextInput style={styles.input} placeholder="Password" />
+          <RadioButtonGroup
+            containerStyle={styles.radioBtn}
+            // selected={current}
+            // onSelected={(value) => setCurrent(value)}
+            radioBackground="green"
+            size={20}
+          >
+            <RadioButtonItem
+        
+              value="test"
+              label={
+                <Text style={{ color: Globals.PrimaryTextColor }}>
+                  Example passing React Element
+                </Text>
+              }
+            />
+          </RadioButtonGroup>
         </View>
 
-        <LinearGradient colors={["#46AA72","#2DA0A4"]} style={styles.signupBtnLinerGradient} >
+        <LinearGradient
+          colors={["#46AA72", "#2DA0A4"]}
+          style={styles.signupBtnLinerGradient}
+        >
           <TouchableOpacity style={styles.signupBtn}>
             <Text style={styles.signupBtnText}>Sign Up</Text>
           </TouchableOpacity>

@@ -23,42 +23,45 @@ const styles = StyleSheet.create({
   },
   signupTexts: {
     color: Globals.PrimaryTextColor,
-    textAlign:"center"
+    textAlign: "center",
   },
   inputsBox: {
-    width:'90%',
-    alignSelf:'center',
-    height: Globals.windowHeight*0.25,
-    marginTop: 15
+    width: "90%",
+    alignSelf: "center",
+    height: Globals.windowHeight * 0.25,
+    marginTop: 15,
   },
   input: {
-    backgroundColor:"#222338",
+    backgroundColor: "#222338",
     marginTop: 10,
     borderRadius: 10,
     paddingHorizontal: 15,
-    height: Globals.windowHeight*0.06,
-    color:'#E2E5EA'
+    height: Globals.windowHeight * 0.06,
+    color: "#E2E5EA",
+  },
+  radioBtn: {
+    marginTop: 5,
   },
   signupBtnLinerGradient: {
-    width: '85%',
-    alignSelf:'center',
-    height: Globals.windowHeight*0.05,
+    width: "85%",
+    alignSelf: "center",
+    height: Globals.windowHeight * 0.05,
     borderRadius: 10,
-    marginTop: 15
+    marginTop: 15,
   },
   signupBtn: {
-    width: '85%',
-    alignSelf:'center',
-    height: Globals.windowHeight*0.05,
-    alignItems:'center',
-    justifyContent:"center",
+    width: "85%",
+    alignSelf: "center",
+    height: Globals.windowHeight * 0.05,
+    alignItems: "center",
+    justifyContent: "center",
     borderRadius: 10,
   },
   signupBtnText: {
     color: Globals.PrimaryTextColor,
-    fontWeight:'500',
-    fontSize:18,
-  }
+    fontWeight: "500",
+    fontSize: 18,
+  },
 });
 
 export default styles;
